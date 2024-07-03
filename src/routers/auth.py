@@ -6,9 +6,7 @@ from src.models.model import model
 
 router = APIRouter()
 
-router.mount("/static", StaticFiles(directory="src/static"), name="static")
-
-templates = Jinja2Templates(directory="templates")
+templates = Jinja2Templates(directory="src/templates")
 @router.get("/",response_class= HTMLResponse)
 async def home(request: Request):
-    return templates.TemplateResponse(request=request, name="item.html")
+    return templates.TemplateResponse(request=request, name="index.html")

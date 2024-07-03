@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EPP.io</title>
-    <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+    <link rel="stylesheet" path="static\css\style.css">
 </head>
 <body>
     <div class="main">
         <div class="navbar">
-            <image src="{{ url_for('static',filename='img/logo.png') }}" class="logo">
+            <image src="static\img\logo.png" class="logo">
             <div class="icon">
                 <h2 class="logo_name">EPP.io</h2>
             </div>
@@ -35,7 +35,7 @@
         </div>
     
         <div class="model">
-            <image src="{{ url_for('static',filename='img/logo.png') }}" class="big-logo">
+            <image src="static\img\logo.png" class="big-logo">
             <div class="res">
                 <p class="result">
                     <h4>{{ r1 }}<br><samp>{{ r2 }}</samp>{{ r3 }}</h4>
